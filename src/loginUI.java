@@ -315,37 +315,36 @@ public class loginUI extends javax.swing.JFrame {
                         uBox.setText(null); // same result w ""
                         pBox.setText(null);
                     } else {
-                    
-                         String jdbc = "jdbc:sqlserver://localhost:1433;databaseName=Movie_Booking_System;encrypt=true;trustServerCertificate=true;user=sa;password=dockerStrongPwd123";
-            
-                        try{
-                
-                                Connection con = DriverManager.getConnection(jdbc);
-                                
-                                // NHO DOI TEN DATABASE VA TABLE_NAME (username and pw)
+                            try {
+                                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                                Connection connection = DriverManager.getConnection(
+                                        "jdbc:sqlserver://localhost:1433;databaseName=Movie_Booking_System;user=sa;password=dockerStrongPwd123;encrypt=true;trustServerCertificate=true;useSSL=false;allowPublicKeyRetrieval=true;serverTimezone=UTC");
+
                                 String sqlquery = "SELECT * FROM Customer WHERE cId = '" + username + "'AND cPassword = '" + pw + "'";
-                
-                                PreparedStatement pst = con.prepareStatement(sqlquery);
+
+
+                                PreparedStatement pst = connection.prepareStatement(sqlquery);
                                 ResultSet rs = pst.executeQuery();
-                
-                                if (rs.next()) {
-                                        JOptionPane.showMessageDialog(null, "Login Successfully!");
-                                        homeUI home = new homeUI();
-                                        home.setVisible(true);
-                                        home.pack();
-                                        home.setLocationRelativeTo(null);
-                                        this.dispose();
-                                    } else {
-                                    // Invalid credentials
-                                        JOptionPane.showMessageDialog(null, "Incorrect Username/Password!");
-                                        uBox.setText("");
-                                        pBox.setText("");
-                                    }
-                            } catch (Exception e){
+
+                                if (!rs.next()) {
+                                    JOptionPane.showMessageDialog(null, "Incorrect Username/Password!");
+                                    uBox.setText("");
+                                    pBox.setText("");
+                                } else {
+                                    JOptionPane.showMessageDialog(null, "Login Successfully!");
+                                    homeUI home = new homeUI();
+                                    home.setVisible(true);
+                                    home.pack();
+                                    home.setLocationRelativeTo(null);
+                                    this.dispose();
+                                }
+
+                            } catch (Exception e) {
                                 e.printStackTrace();
                             }
                     }
     }//GEN-LAST:event_loginbtnActionPerformed
+
 
     /**
      * @param args the command line arguments

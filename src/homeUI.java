@@ -58,7 +58,7 @@ public class homeUI extends javax.swing.JFrame {
             }
         });
 
-        ticketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/ticket0.png"))); // NOI18N
+        ticketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("data/assets/ticket0.png"))); // NOI18N
 
         bookingText.setFont(new java.awt.Font("Gotham", 1, 24)); // NOI18N
         bookingText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -97,7 +97,7 @@ public class homeUI extends javax.swing.JFrame {
             }
         });
 
-        purchaseIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/purchase.png"))); // NOI18N
+        purchaseIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("data/assets/purchase.png"))); // NOI18N
         purchaseIcon.setToolTipText("");
 
         bookingText1.setFont(new java.awt.Font("Gotham", 1, 24)); // NOI18N
