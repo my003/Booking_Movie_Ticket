@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JButton" name="jButton11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="384" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="aquaman" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="phuongnam" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="yeulaivongau" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="taylorswift" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="duongcung" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="chiemdoat" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="dieuuoc" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="ont" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="ghilbli" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="wonka" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="avatar" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                          <Component id="teeyod" alignment="1" min="-2" pref="615" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="171" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="42" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="chiemdoat" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="duongcung" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="taylorswift" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="yeulaivongau" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="phuongnam" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="aquaman" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="teeyod" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="avatar" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="wonka" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="ghilbli" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="ont" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="dieuuoc" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="36" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MOVIE"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="chiemdoat">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CHIEM DOAT "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chiemdoatActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="duongcung">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DUONG CUNG"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="duongcungActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="taylorswift">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NHUNG KY NGUYEN CUA TAYLOR SWIFT"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="taylorswiftActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="phuongnam">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DAT RUNG PHUONG NAM"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phuongnamActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="aquaman">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AQUAMAN VA VUONG QUOC THAT LAC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aquamanActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="yeulaivongau">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="YEU LAI VO NGAU"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yeulaivongauActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="avatar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="AVATAR: DONG CHAY CUA NUOC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="avatarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="wonka">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="WONKA"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wonkaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="teeyod">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="TEE YOD: QUY AN TANG"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="teeyodActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ont">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MOT MINH VAN ON&quot;T"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ontActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="dieuuoc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DIEU UOC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dieuuocActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ghilbli">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="THIEU NIEN VA CHIM DIEC"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ghilbliActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
