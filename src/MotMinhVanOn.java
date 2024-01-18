@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package BookingScreen;
+
 
 /**
  *
@@ -163,7 +163,9 @@ public class MotMinhVanOn extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MotMinhVanOn().setVisible(true);
+                MotMinhVanOn frame = new MotMinhVanOn();
+                frame.setVisible(true);
+                frame.setLocationRelativeTo(null);  // appear center the screen
             }
         });
     }
