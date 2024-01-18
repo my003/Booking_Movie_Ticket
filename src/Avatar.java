@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package BookingScreen;
+
 
 /**
  *
@@ -105,6 +105,7 @@ public class Avatar extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.hide();
+        
         new SeatEight().show();         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -153,7 +154,9 @@ public class Avatar extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Avatar().setVisible(true);
+                Avatar frame = new Avatar();
+                frame.setVisible(true);
+                frame.setLocationRelativeTo(null);  // appear center the screen
             }
         });
     }

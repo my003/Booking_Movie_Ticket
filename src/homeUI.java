@@ -58,7 +58,7 @@ public class homeUI extends javax.swing.JFrame {
             }
         });
 
-        ticketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("data/assets/ticket0.png"))); // NOI18N
+        ticketIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/ticket0.png"))); // NOI18N
 
         bookingText.setFont(new java.awt.Font("Gotham", 1, 24)); // NOI18N
         bookingText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -97,8 +97,13 @@ public class homeUI extends javax.swing.JFrame {
             }
         });
 
-        purchaseIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("data/assets/purchase.png"))); // NOI18N
+        purchaseIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/purchase.png"))); // NOI18N
         purchaseIcon.setToolTipText("");
+        purchaseIcon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                purchaseIconMouseClicked(evt);
+            }
+        });
 
         bookingText1.setFont(new java.awt.Font("Gotham", 1, 24)); // NOI18N
         bookingText1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -147,7 +152,7 @@ public class homeUI extends javax.swing.JFrame {
 
     private void bookingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bookingMouseClicked
         // TODO add your handling code here:
-        bookingUI frame = new bookingUI();
+        Movie frame = new Movie();
         frame.setVisible(true);
         frame.pack();
         frame.setLocationRelativeTo(null);
@@ -162,6 +167,13 @@ public class homeUI extends javax.swing.JFrame {
         frame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_purchaseMouseClicked
+
+    private void purchaseIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_purchaseIconMouseClicked
+        // TODO add your handling code here:
+        purchase p = new purchase();
+        p.setVisible(true);
+        
+    }//GEN-LAST:event_purchaseIconMouseClicked
 
     /**
      * @param args the command line arguments

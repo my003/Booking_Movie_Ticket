@@ -12,6 +12,7 @@ CREATE TABLE Movie (
 	mDuration INT,
 	PRIMARY KEY (mId)
 );
+SELECT * FROM BookingTicket;
 CREATE TABLE MovieShow (
 	shId VARCHAR(100) NOT NULL,
 	shDate VARCHAR(100) NOT NULL,
@@ -42,7 +43,6 @@ CREATE TABLE BookingTicket (
 	FOREIGN KEY (sId, rId) REFERENCES Seat(sId, rId),
 	FOREIGN KEY (pId) REFERENCES Payment(pId)
 );
-
 CREATE TABLE Payment (
 	pId VARCHAR(100),
 	pTicketNo INT,
@@ -54,6 +54,8 @@ CREATE TABLE Payment (
 );
 
 --MY
+SELECT * FROM MovieGenre;
+
 CREATE TABLE Customer(
 	cId VARCHAR(100) NOT NULL DEFAULT 0,
 	FName VARCHAR(100) NOT NULL,
@@ -89,7 +91,7 @@ INSERT INTO Movie
 	VALUES	('001', 'Chiem doat', 'Vietsub', 'Vietnam', 113),
 			('002', 'Duong cung', 'Vietsub', 'Vietnam', 123),
 			('003', 'Nhung ky nguyen cua Taylor Swift', 'English - Vietsub', 'US', 169),
-			('004', 'Yeu lai vo ngau', 'Tiếng Hàn - Phụ đề Tiếng Việt', 'Korea', 119),
+			('004', 'Yeu lai vo ngau', 'Korean - VietSub', 'Korea', 119),
 			('005', 'Dat rung phuong nam', 'Vietsub', 'Vietnam', 130),
 			('006', 'Aquaman va Vuong quoc that lac','English - Vietsub','US', 124),
 			('007', 'Tee Yod: Quy an tang','Thai - Vietsub','Thailand', 119),
@@ -153,13 +155,18 @@ INSERT INTO MovieShow
 			('MS045', '19-11-2023', '20:50', '002', 'M16'),
 			('MS046', '01-12-2023', '22:55', '003', 'M16');
 
--- INSERT INTO BookingTicket
--- 	VALUES	('C5005B', '2023-11-12 13:23', '21204', 'MS001', 'C5', '0123', 'M12', 'P001'),
--- 			('F1905C', '2023-11-03 09:01', '21205', 'MS002', 'F1', '0123', 'M13', 'P002'),
--- 			('C8005B', '2023-11-10 21:14', '21206', 'MS003', 'C8', '0124', 'H15', 'P003'),
--- 			('B1105E', '2023-11-28 22:47', '21207', 'MS004', 'B1', '0127', 'N18', 'P004'),
--- 			('F3005C', '2023-11-20 15:13', '21208', 'MW005', 'F3', '0124', 'H14', 'P005');
+INSERT INTO BookingTicket 
+	VALUES	('C00101201', '2024-01-02 10:32:55', 'C001', 'MS031', 'F07', 'M14', 'P001'),
+			('C00101202', '2024-01-02 10:32:55', 'C001', 'MS031', 'F08', 'M14', 'P001'),
+			('C00201001', '2024-01-02 08:30:05', 'C002', 'MS041', 'E04', 'M16', 'P002'),
+			('C00201002', '2024-01-02 08:30:05', 'C002', 'MS041', 'E05', 'M16', 'P002'),
+			('C00201003', '2024-01-02 08:30:05', 'C002', 'MS041', 'E06', 'M16', 'P002'),
+			('C00300501', '2024-01-03 22:05:54', 'C003', 'MS032', 'H03', 'M15', 'P003');
 
+INSERT INTO Payment 
+	VALUES	( 'P001', 2, 45000, 'Momo'),
+			( 'P002', 3, 45000, 'Bank'),
+			( 'P003', 1, 45000, 'ZaloPay');
 INSERT INTO Seat
 	VALUES  ('A01', 0, 'M11'),
 			('A02', 0, 'M11'),
@@ -387,8 +394,8 @@ INSERT INTO Seat
 	        ('F04', 0, 'M13'),
 	        ('F05', 0, 'M13'),
 	        ('F06', 0, 'M13'),
-	        ('F07', 0, 'M13'),
-	        ('F08', 0, 'M13'),
+	        ('F07', 1, 'M13'),
+	        ('F08', 1, 'M13'),
 	        ('F09', 0, 'M13'),
 	        ('F10', 0, 'M13'),
 	        ('G01', 0, 'M13'),
@@ -593,7 +600,7 @@ INSERT INTO Seat
 	        ('G10', 0, 'M15'),
 	        ('H01', 0, 'M15'),
 	        ('H02', 0, 'M15'),
-	        ('H03', 0, 'M15'),
+	        ('H03', 1, 'M15'),
 	        ('H04', 0, 'M15'),
 	        ('H05', 0, 'M15'),
 	        ('H06', 0, 'M15'),
@@ -664,9 +671,9 @@ INSERT INTO Seat
 	        ('E01', 0, 'M16'),
 	        ('E02', 0, 'M16'),
 	        ('E03', 0, 'M16'),
-	        ('E04', 0, 'M16'),
-	        ('E05', 0, 'M16'),
-	        ('E06', 0, 'M16'),
+	        ('E04', 1, 'M16'),
+	        ('E05', 1, 'M16'),
+	        ('E06', 1, 'M16'),
 	        ('E07', 0, 'M16'),
 	        ('E08', 0, 'M16'),
 	        ('E09', 0, 'M16'),
@@ -701,15 +708,6 @@ INSERT INTO Seat
 	        ('H08', 0, 'M16'),
 	        ('H09', 0, 'M16'),
 	        ('H10', 0, 'M16');
-
-
-
--- INSERT INTO Payment
--- 	VALUES	( 'P001', 23, 60000, 'Momo'),
--- 			( 'P002', 9, 80000, 'Bank'),
--- 			( 'P003', 16, 80000, 'Bank'),
--- 			( 'P004', 21, 100000, 'ZaloPay'),
--- 			( 'P005', 19, 100000, 'Momo');
 
 
 INSERT INTO Customer
