@@ -172,18 +172,18 @@ public class Booking extends javax.swing.JFrame {
         });
 
         jTextField1.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        jTextField1.setText("12:30");
+        jTextField1.setText("08:20");
 
-        jTextField2.setText("Dieu Uoc");
+        jTextField2.setText("Dat Rung Phuong Nam");
 
         jTextField3.setText("M15");
 
-        jTextField4.setText("F8, F7");
+        jTextField4.setText("H03");
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel7.setText("Payment");
 
-        jTextField5.setText("90.000");
+        jTextField5.setText("45.000");
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
@@ -323,6 +323,11 @@ public class Booking extends javax.swing.JFrame {
         loginbtn2.setText("CONFIRM");
         loginbtn2.setBorderPainted(false);
         loginbtn2.setOpaque(true);
+        loginbtn2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginbtn2MouseClicked(evt);
+            }
+        });
         loginbtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginbtn2ActionPerformed(evt);
@@ -389,17 +394,17 @@ public class Booking extends javax.swing.JFrame {
 
     private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Cancel Booking");
-        homeUI home = new homeUI();
-        home.setVisible(true);
-        home.pack();
-        home.setLocationRelativeTo(null);
-        this.dispose();
+//        JOptionPane.showMessageDialog(null, "Cancel Booking");
+//        homeUI home = new homeUI();
+//        home.setVisible(true);
+//        home.pack();
+//        home.setLocationRelativeTo(null);
+//        this.dispose();
     }//GEN-LAST:event_formMouseClicked
 
     private void loginbtn1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginbtn1MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Booking Successfully!");
+        JOptionPane.showMessageDialog(null, "Cancel Booking");
         homeUI home = new homeUI();
         home.setVisible(true);
         home.pack();
@@ -410,6 +415,16 @@ public class Booking extends javax.swing.JFrame {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void loginbtn2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginbtn2MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Booking Successfully!");
+        homeUI home = new homeUI();
+        home.setVisible(true);
+        home.pack();
+        home.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_loginbtn2MouseClicked
 
     /**
      * @param args the command line arguments
