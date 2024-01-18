@@ -293,56 +293,61 @@ public class loginUI extends javax.swing.JFrame {
 
     private void loginbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbtnActionPerformed
         // TODO add your handling code here:'
-
-        String username = uBox.getText();
-        String pw = String.valueOf(pBox.getPassword());
-
-//        if (password.equals("mia2003") && (username.equals("C001")))
-//        {
-//        //         username.setText(null);
-//        //         password.setText(null);
-//               // systemExit();
-////                homeUI frame = new homeUI();
-////                frame.setVisible(true);
-////                this.dispose();
-//            }
-                //else
-
-        // tam cmt below one
-                if(username == null || pw == null) {
-                        JOptionPane.showMessageDialog(null,"Empty Login Details");
-                        uBox.setText(null); // same result w ""
-                        pBox.setText(null);
-                    } else {
-
-                            try {
-                                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                                Connection connection = DriverManager.getConnection(
-                                        "jdbc:sqlserver://localhost:1433;databaseName=Movie_Booking_System;user=sa;password=dockerStrongPwd123;encrypt=true;trustServerCertificate=true;useSSL=false;allowPublicKeyRetrieval=true;serverTimezone=UTC");
-
-                                String sqlquery = "SELECT * FROM Customer WHERE cId = '" + username + "'AND cPassword = '" + pw + "'";
-
-
-                                PreparedStatement pst = connection.prepareStatement(sqlquery);
-                                ResultSet rs = pst.executeQuery();
-
-//                                if (!rs.next()) {
-//                                    JOptionPane.showMessageDialog(null, "Incorrect Username/Password!");
-//                                    uBox.setText("");
-//                                    pBox.setText("");
-//                                } else {
-                                    JOptionPane.showMessageDialog(null, "Login Successfully!");
+        JOptionPane.showMessageDialog(null, "Login Successfully!");
                                     homeUI home = new homeUI();
                                     home.setVisible(true);
                                     home.pack();
                                     home.setLocationRelativeTo(null);
                                     this.dispose();
-//                                }
-
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                    }
+//        String username = uBox.getText();
+//        String pw = String.valueOf(pBox.getPassword());
+//
+////        if (password.equals("mia2003") && (username.equals("C001")))
+////        {
+////        //         username.setText(null);
+////        //         password.setText(null);
+////               // systemExit();
+//////                homeUI frame = new homeUI();
+//////                frame.setVisible(true);
+//////                this.dispose();
+////            }
+//                //else
+//
+//        // tam cmt below one
+//                if(username == null || pw == null) {
+//                        JOptionPane.showMessageDialog(null,"Empty Login Details");
+//                        uBox.setText(null); // same result w ""
+//                        pBox.setText(null);
+//                    } else {
+//
+//                            try {
+//                                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//                                Connection connection = DriverManager.getConnection(
+//                                        "jdbc:sqlserver://localhost:1433;databaseName=Movie_Booking_System;user=sa;password=dockerStrongPwd123;encrypt=true;trustServerCertificate=true;useSSL=false;allowPublicKeyRetrieval=true;serverTimezone=UTC");
+//
+//                                String sqlquery = "SELECT * FROM Customer WHERE cId = '" + username + "'AND cPassword = '" + pw + "'";
+//
+//
+//                                PreparedStatement pst = connection.prepareStatement(sqlquery);
+//                                ResultSet rs = pst.executeQuery();
+//
+////                                if (!rs.next()) {
+////                                    JOptionPane.showMessageDialog(null, "Incorrect Username/Password!");
+////                                    uBox.setText("");
+////                                    pBox.setText("");
+////                                } else {
+//                                    JOptionPane.showMessageDialog(null, "Login Successfully!");
+//                                    homeUI home = new homeUI();
+//                                    home.setVisible(true);
+//                                    home.pack();
+//                                    home.setLocationRelativeTo(null);
+//                                    this.dispose();
+////                                }
+//
+//                            } catch (Exception e) {
+//                                e.printStackTrace();
+//                            }
+//                    }
     }//GEN-LAST:event_loginbtnActionPerformed
 
 
